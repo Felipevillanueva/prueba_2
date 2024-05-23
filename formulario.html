@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap and Custom Carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <style>
+  body {
+    background-image: url(img/fondo\ 2.jpg)
+  }
+</style>
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <!-- Logo en el navbar -->
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.jpg" alt="Logo de la empresa">
+        </a>
+        <!-- Toggler button para dispositivos móviles -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Elementos del navbar -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">productos</a>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Formulario de búsqueda -->
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="slide">
+      <div class="item" style="background-image: url(img/shampoo.png);">
+        <div class="content">
+          <div class="name">shampoo</div>
+          <a href="shampoos.html">
+            <button>Ver más </button>
+          </a>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(img/plato.webp);">
+        <div class="content">
+          <div class="name">platos</div>
+          <a href="platos.html">
+            <button>Ver más</button>
+          </a>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(img/correa.jpg);">
+        <div class="content">
+          <div class="name">correa</div>
+       <a href="file:///C:/Users/felip/OneDrive/Desktop/actividad%204/correa.html">
+          <button>Ver más</button>
+        </a>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(img/collar.jpg);">
+        <div class="content">
+          <div class="name">collar</div>
+         <a href="file:///C:/Users/felip/OneDrive/Desktop/actividad%204/collares.html">
+          <button>Ver más</button>
+        </a>
+        </div>
+      </div>
+      <div class="item" style="background-image: url(img/juguete.jpg);">
+        <div class="content">
+          <div class="name">juguete</div>
+          <a href="file:///C:/Users/felip/OneDrive/Desktop/actividad%204/juguete.html">
+          <button>Ver más</button>
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="button">
+      <button class="prev"><i class="fas fa-arrow-left"></i></button>
+      <button class="next"><i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <script src="c.js"></script>
+</body>
+</html>
